@@ -28,7 +28,7 @@ class TicTacToe
     index -= 1
   end
 
-  def move(index, token = "X")
+  def move(index, token)
     @board[index] = token
   end
 
@@ -68,7 +68,7 @@ class TicTacToe
     index = input_to_index(input)
     token = current_player
     if valid_move?(index)
-      move(index, token = "X")
+      move(index, token)
       display_board
     else
       puts "Invalid move."
