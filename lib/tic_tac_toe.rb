@@ -47,4 +47,10 @@ class TicTacToe
       false
     end
   end
+
+  def turn_count
+    count_array = @board.select {|i| i != " "}
+    count_array.length
+
+  end
 end
