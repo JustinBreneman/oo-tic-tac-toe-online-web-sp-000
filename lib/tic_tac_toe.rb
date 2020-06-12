@@ -55,7 +55,7 @@ class TicTacToe
 
   def current_player
     count = turn_count
-    if count.even?
+    if count.odd?
       "O"
     else
       "X"
