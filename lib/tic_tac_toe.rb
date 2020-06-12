@@ -126,9 +126,9 @@ class TicTacToe
     elsif won?
       winning_move = won?
       win_ident = winning_move[1]
-      if board[win_ident] == "X"
+      if @board[win_ident] == "X"
         return "X"
-      elsif board[win_ident] == "O"
+      elsif @board[win_ident] == "O"
         return "O"
       end
     end
