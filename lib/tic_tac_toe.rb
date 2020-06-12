@@ -118,7 +118,7 @@ class TicTacToe
     end
   end
 
-  def winner(board)
+  def winner
     if !(over?)
       return nil
     elsif draw?
