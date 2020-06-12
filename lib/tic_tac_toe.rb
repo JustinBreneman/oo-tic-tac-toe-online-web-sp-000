@@ -51,6 +51,13 @@ class TicTacToe
   def turn_count
     count_array = @board.select {|i| i != " "}
     count_array.length
+  end
 
+  def current_player
+    if turn_count.even?
+      "O"
+    else
+      "X"
+    end
   end
 end
