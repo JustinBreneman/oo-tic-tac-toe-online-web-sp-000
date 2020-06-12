@@ -61,4 +61,8 @@ class TicTacToe
       "X"
     end
   end
+
+  def turn
+    puts "Please select a position 1 - 9:"
+  end
 end
