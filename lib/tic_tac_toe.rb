@@ -117,4 +117,20 @@ class TicTacToe
       false
     end
   end
+
+  def winner(board)
+    if !(over?)
+      return nil
+    elsif draw?
+      return nil
+    elsif won?
+      winning_move = won?
+      win_ident = winning_move[1]
+      if board[win_ident] == "X"
+        return "X"
+      elsif board[win_ident] == "O"
+        return "O"
+      end
+    end
+  end
 end
