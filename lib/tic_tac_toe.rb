@@ -133,4 +133,15 @@ class TicTacToe
       end
     end
   end
+
+  def play
+    until over?
+      turn
+    end
+    if draw?
+      puts "Cat's Game!"
+    elsif winner == "X" || winner == "O"
+      puts "Congratulations #{winner}!"
+    end
+  end
 end
