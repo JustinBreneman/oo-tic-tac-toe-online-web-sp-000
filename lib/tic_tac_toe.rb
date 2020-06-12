@@ -99,4 +99,12 @@ class TicTacToe
   def full?
   !(@board.include? " ")
   end
+
+  def draw?
+    if !(won?)
+      full?
+    else
+      false
+    end
+  end
 end
