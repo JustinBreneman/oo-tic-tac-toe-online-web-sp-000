@@ -91,7 +91,7 @@ class TicTacToe
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
         win_combo = win_combination
       else
-        false
+        win_combo = false
       end
     end
     win_combo
